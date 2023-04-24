@@ -1,0 +1,138 @@
+@charset "utf8";
+
+header{
+    background-color: #488C03;
+    text-align: center;
+    color: white;
+    margin: auto;
+    box-shadow: inset 1px -10px 40px black
+    
+}
+
+header > h1 {
+    display: block;
+    border: 1px 1px 1px black;
+}
+
+nav {
+    text-align: start;
+}
+
+nav > a {
+    color: white;
+    font-style: unset;
+    margin: 0px 5px;
+    text-decoration: none;
+}
+
+nav > :hover{
+    background-color: white;
+    color: black;
+    padding: 2px;
+    border-radius: 5px 5px 0px 0px
+}
+
+h1 {
+    margin: 0px;
+    color:#488C03;
+}
+
+h2{
+    
+    background-image: linear-gradient(to right, #488C03, #F2F2F2);
+    color : #488C03;
+    padding: 0px 15px;
+    
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+
+}
+
+image{
+    margin: center;
+}
+
+header > p{
+    text-align: center;
+}
+body {
+    margin: auto;
+    background-color:#F2F2F2;
+    
+    
+}
+
+main {
+    display: block;
+    margin: 0px 100px;
+    background-color: #C4D9B0;
+    padding: 30px 30px ;
+    border-radius: 0px 0px 10px 10px;
+    outline: 0px
+    
+}
+
+section{
+    margin: center
+
+}
+
+#bonus{
+    background-color:#7AA65B;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    
+}
+
+#bonus > h3{
+    background-color: #488C03;
+    color:white;
+    border-radius: 10px 10px 0px 0px ;
+    padding: 5px;
+    margin: 0px;
+}
+
+#bonus > p{
+    margin: 20px;
+}
+
+#video{
+    background-color: #488C03;
+    margin-bottom: 10px;
+    
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    padding: 10px 15px;
+}
+
+aside{
+    
+    margin: auto;
+    padding: auto;
+}
+ul{
+    display: inline-block;
+    list-style-type:'✔';
+    margin-right: 100px;
+
+}
+
+
+footer{
+    background-color:#488C03;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    padding: 5px;
+}
