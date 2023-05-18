@@ -1,0 +1,43 @@
+target="_blank"  - Abre uma nova aba no navegador
+
+abbr= - Abreviação, mostra o significado de uma abreviação.
+
+height: - Altura
+width: - Largura
+border: Borda
+padding = Espaço entre a borda e o conteúdo
+margin = Espaço de fora
+Outline = Contorno 'fora do elemento'
+
+text-indent: -Espaçamento de inicio de paragráfo.
+
+#   = id
+.   = class
+:   = pseudo-class
+::  = pseudo-element
+>   = children
+
+
+
+
+
+border-collapse: collapse; /* Colar bordas */
+
+Hierarquia de Tabelas Simples
+        Table = tabela
+        <tr> table row = linha de tabela
+            <th> table header = cabeçalho de tabela
+                <td> table data = dado de tabela
+
+
+<!--
+        ANATOMIA PARA TABELAS GRANDES
+
+        TABLE
+            THEAD
+                TR,TD,TH
+            TDODY
+                TR,TD,TH
+            TFOOT
+                TR,TD,TH
+    -->
