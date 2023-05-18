@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <i class="fa-solid fa-code"></i>
+    <title>Tabelas</title>
+
+
+    <style>
+        html{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            align-items: center;
+        }
+
+        table{
+            width: 70vw;
+            border-collapse: collapse;
+        }
+        .regiao{
+            text-align: center;
+        }
+
+        .number{
+            text-align: right;
+        }
+
+        .poptt{
+            text-align: center;
+        }
+
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+    </style>
+</head>
+<body></body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+
+        TABLE
+            THEAD
+                TR,TD,TH
+            TDODY
+                TR,TD,TH
+            TFOOT
+                TR,TD,TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Região</th>
+                <th>População</th>
+                <th>% da pop. total</th>
+                <th>Pais Comparável (Habitantes)</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td class="regiao"><a href="#">Região Sudeste</a></td>
+                <td class="number">87 481 631</td>
+                <td class="poptt">42,10%</td>
+                <td class="comp"><a href="#">Irã</a> (86 143 838)</td>
+            </tr>
+            <tr>
+                <td class="regiao"><a href="#">Região Nordeste</a></td>
+                <td class="number">55 389 382	</td>
+                <td class="poptt">26,66%	</td>
+                <td class="comp"><a href="#">Myanmar</a> (55 294 979)</td>
+            </tr>
+            <tr>
+                <td class="regiao"><a href="#">Região Sul</a></td>
+                <td class="number">30 685 598</td>
+                <td class="poptt">14,77%	</td>
+                <td class="comp"><a href="#">Gana</a> (30 832 019)</td>
+            </tr>
+            <tr>
+                <td class="regiao"><a href="#">Região Norte</a></td>
+                <td class="number">17 834 762</td>
+                <td class="poptt">8,58%	</td>
+                <td><a href="#">Países Baixos</a> (17 790 060)</td class="comp">
+            </tr>
+            <tr>
+                <td class="regiao"><a href="#">Região Centro-Oeste</a></td>
+                <td class="number">16 492 326	</td>
+                <td class="poptt">7,93%</td>
+                <td class="comp"><a href="#">Chade</a> (16 818 391)</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <th>Total</th>
+            <td>*****</td>
+            <td>***</td>
+            <td>***</td>
+
+
+        </tfoot>
+    </table>
+</body>
+</html>
