@@ -17,6 +17,16 @@
         table{
             width: 70vw;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+
+            font-size: 1.5em;
+            background-color: gray;
+            font-weight: bold;
+            padding: 10px;
+            
         }
         .regiao{
             text-align: center;
@@ -24,10 +34,23 @@
 
         .number{
             text-align: right;
+            width: 70px;
+
         }
 
         .poptt{
             text-align: center;
+        }
+
+        td:hover, a:hover{
+            text-decoration: dotted;
+            background-color: black;
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
         }
 
 
@@ -39,6 +62,17 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        tbody tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+
+        thead tr th{
+            position: sticky;
+            top: 0px;
+            background-color: rgb(111, 111, 111);
+
         }
 
     </style>
@@ -57,12 +91,13 @@
                 TR,TD,TH
     -->
     <table>
+        <caption>População das regiões Brasileiras</caption>
         <thead>
             <tr>
-                <th>Região</th>
-                <th>População</th>
-                <th>% da pop. total</th>
-                <th>Pais Comparável (Habitantes)</th>
+                <th scope="col">Região</th>
+                <th scope="col">População</th>
+                <th scope="col">% da pop. total</th>
+                <th scope="col">Pais Comparável (Habitantes)</th>
             </tr>
 
         </thead>
@@ -100,7 +135,7 @@
 
         </tbody>
         <tfoot>
-            <th>Total</th>
+            <th scope="row">Total</th>
             <td>*****</td>
             <td>***</td>
             <td>***</td>
@@ -108,5 +143,11 @@
 
         </tfoot>
     </table>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur fugiat numquam vitae ad repudiandae ullam iste nobis neque architecto quisquam, est sint? Deserunt eligendi est ratione natus dolores, placeat Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore beatae numquam provident. Facere perferendis harum possimus est! Ea quas ad nemo quasi minima vel expedita recusandae. Mollitia harum doloribus debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus hic, iste quam nostrum alias autem quaerat in. Quae numquam facere repellat quos harum delectus nulla voluptatibus vero, itaque temporibus iusto?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur fugiat numquam vitae ad repudiandae ullam iste nobis neque architecto quisquam, est sint? Deserunt eligendi est ratione natus dolores, placeat Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore beatae numquam provident. Facere perferendis harum possimus est! Ea quas ad nemo quasi minima vel expedita recusandae. Mollitia harum doloribus debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus hic, iste quam nostrum alias autem quaerat in. Quae numquam facere repellat quos harum delectus nulla voluptatibus vero, itaque temporibus iusto?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur fugiat numquam vitae ad repudiandae ullam iste nobis neque architecto quisquam, est sint? Deserunt eligendi est ratione natus dolores, placeat Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore beatae numquam provident. Facere perferendis harum possimus est! Ea quas ad nemo quasi minima vel expedita recusandae. Mollitia harum doloribus debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus hic, iste quam nostrum alias autem quaerat in. Quae numquam facere repellat quos harum delectus nulla voluptatibus vero, itaque temporibus iusto?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur fugiat numquam vitae ad repudiandae ullam iste nobis neque architecto quisquam, est sint? Deserunt eligendi est ratione natus dolores, placeat Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore beatae numquam provident. Facere perferendis harum possimus est! Ea quas ad nemo quasi minima vel expedita recusandae. Mollitia harum doloribus debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus hic, iste quam nostrum alias autem quaerat in. Quae numquam facere repellat quos harum delectus nulla voluptatibus vero, itaque temporibus iusto?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur fugiat numquam vitae ad repudiandae ullam iste nobis neque architecto quisquam, est sint? Deserunt eligendi est ratione natus dolores, placeat Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore beatae numquam provident. Facere perferendis harum possimus est! Ea quas ad nemo quasi minima vel expedita recusandae. Mollitia harum doloribus debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus hic, iste quam nostrum alias autem quaerat in. Quae numquam facere repellat quos harum delectus nulla voluptatibus vero, itaque temporibus iusto?</p>
 </body>
 </html>

@@ -23,21 +23,45 @@ text-indent: -Espaçamento de inicio de paragráfo.
 
 border-collapse: collapse; /* Colar bordas */
 
-Hierarquia de Tabelas Simples
-        Table = tabela
-        <tr> table row = linha de tabela
-            <th> table header = cabeçalho de tabela
-                <td> table data = dado de tabela
+
+TABELAS
+
+    Hierarquia de Tabelas Simples
+            Table = tabela
+            <tr> table row = linha de tabela
+                <th> table header = cabeçalho de tabela
+                    <td> table data = dado de tabela
 
 
-<!--
-        ANATOMIA PARA TABELAS GRANDES
+    ANATOMIA PARA TABELAS GRANDES
 
-        TABLE
-            THEAD
-                TR,TD,TH
-            TDODY
-                TR,TD,TH
-            TFOOT
-                TR,TD,TH
-    -->
+            TABLE
+                CAPTION = LEGENDA
+                THEAD
+                    TR,TD,TH
+                TDODY
+                    TR,TD,TH
+                TFOOT
+                    TR,TD,TH
+ 
+
+        Importância do (scope="")
+        Define se o informação está em uma coluna ou uma linha.
+
+        tbody tr:nth-child(odd ou even "impar ou par") = Efeito zebrado
+
+
+
+        thead tr th
+            position: sticky;
+            top: 0px;
+            background-color:
+
+            Usado pra fixar o cabeçalho da planilha quando haver rolagem...
+
+            
+
+        Mesclagem
+
+        Usar colspan= Para espandir as células em colunas.
+        Usar rowspan= Para espandir as células em linhas.
