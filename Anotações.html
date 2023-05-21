@@ -80,17 +80,89 @@ Seletores
 
 Caixas
 
+    height: - Altura
+    width: - Largura
+    border: Borda
+    padding = Espaço entre a borda e o conteúdo
+    margin = Espaço de fora
+    Outline = Contorno 'fora do elemento'
+
+Tipos de Caixas
+
+        Box-level - Tem quebra de linha 
+                    ex: <div> <h1>-<h6> <p> <main> <header> <nav> <article> <aside> <footer> <form> <video>
+            
+        Inline-level - Não tem quebra 
+                    ex: <span> <a> <code> <small> <strong> <em> <sup>-<sub> <label> <button> <input> <select>
+
+        User agent -> auto navegador
+
+        margin:auto <!--Caixa no centro-->
+        box-shadow: <!--Sombra-->
+        Border-radios: <!--Arredondar bordas-->
+
+    Shorthand ordem (Horário)
+
+        top
+        right
+        botton
+        left
+
+    Grouping tags
+
+        <Header> <!--Cabeçalho-->
+            <Nav> <!--Menus "Links"-->
+                <Main> <!--Conteúdo Principal-->
+                    <Section> <!--Seções-->
+                        <Article> <!--Artigo, post, blogs, depoismentos-->
+                            <Aside> <!--Conteúdo complementar-->
+                                <Footer></footer> <!--Roda pé-->
+
+
+        Usar essa configuração para ter uma melhor configuração de visualização de conteúdo. 
+
+        min-width:
+        max-width: 
+
+        Incluindo '✔' antes da lista: ul{
+                                            list-style-position: inside;
+                                            columns: 2;
+                                            list-style-type: '\2714\00a0\00a0';
+                                        }
+                            
+
+        Margem negativa para encaixar os blocos 
+
+
+
+Posição 
+
+height: 98 vh; <!--Área de viewport (Área visível de tela)-->
+
+Background-size; "cover" <!--Alinha a imagem no centro--> ou "contain" <!--Redimenciona a imagem-->
+
+Background-attachment-fixed <!--Fixa a imagem ao rolar-->
+
+Shorthand - Background sequência: color -> image -> position -> repeat -> size <!--Não funciona--> -> attachment
+
+Posicionamento Absoluto <!--Conteúdo-->
+
+(left, top) trabalhar com %
+
+Centralização vertical -> transform:translate (-50%, -50%)
+
+Transformar em letras maiúsculas {text-transform:uppercase;
+                                  font-variant: small-caps;}
+
+
+
+
+
+
 
 target="_blank"  - Abre uma nova aba no navegador
 
 abbr= - Abreviação, mostra o significado de uma abreviação.
-
-height: - Altura
-width: - Largura
-border: Borda
-padding = Espaço entre a borda e o conteúdo
-margin = Espaço de fora
-Outline = Contorno 'fora do elemento'
 
 text-indent: -Espaçamento de inicio de paragráfo.
 
@@ -166,3 +238,12 @@ TABELAS
             overflow-x: auto;
         }
         Usado para fazer uma barra de rolagem lateral somente para o conteudo da tabela.
+
+
+<iframe src="https://www.cursoemvideo.com" frameborder="0"> <a href="https://www.cursoemvideo.com" target="_blank">CursoemVideo</a>
+</iframe> <!--Importanta usar um link do conteúdo para que se o navegador não for compativel com o iframe ele mostar o link clicável -->
+
+<!--Tamanho padrão do iframe é de 300px x 150px-->
+
+Usar o parametro scolling="no" dentra da tag iframe, para não ter a barra de rolagem
+
