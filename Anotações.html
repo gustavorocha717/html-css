@@ -1,0 +1,168 @@
+<h1>Configurações Globais das CSS</h1>
+
+        * = Todos
+
+        *{
+            height: 100%;
+        }
+
+
+<h1>Harmonia das Cores</h1> 
+
+        Primárias: Amarelo, Vermelho e Azul
+        Secundárias: Laranja, Violeta e Verde
+        Terciárias: Amarelo-Alaranjado, Vermelho-Alaranjado, Vermelho- Arroxeado, Azul-Arroxeado, Azul-Esverdeado e Amarelo-Esverdeado
+
+        Cores quentes:Amarelo, Amarelo-Alaranjado, Laranja, Vermelho-Alaranjado, Vermelho e Vermelho- Arroxeado
+        Cores frias: Violeta,  Azul-Arroxeado, Azul, Azul-Esverdeado, Verde e Amarelo-Esverdeado
+
+
+        >Utilizar de 3 a 4 cores na paleta.
+        >Usar a extensão ColorZila para copiar cores de outros sites.
+
+<!--Sites úteis: Adobecolor.com/ Palettom.cpm/ Coolors.com-->
+
+
+<h1>Tipografia</h1>
+
+            Fámilia Tipográfica
+
+        Algumas fontes tem diferentes tipos: light, normal, seminegrito, negrito e extra negrito
+
+        Categorias: Serifadas, sans-serif "Sem-serifa", mono espaçadas "mesmo espaço", handwriting "Feito à mão", Display "Comemorativas".
+
+        Medidas Absolutas: cm, mm, in, [px], pt, pc
+        Medidas Relativas: [em], ex, rem, vw, vh, %
+
+        Peso da Fonte:  font-weigth: "(lighter, normal, bold, bolder)" ou "100 - 900" -> negrito
+                        font-size: 1em -> Tamanho
+                        font-style: italic -> Itálico
+                        text-decoration: underline -> Sulinhado
+
+        Shorthand fontes: sequência -> fonte-style -> font-weigth -> fonte-size -> font-family
+                                <style>
+                                    Ex{
+                                        font: italic bolder 3em Arial, Helvetica, sans-serif;
+                                    }
+                                </style>
+
+            Fontes Externas
+
+        @font-face{
+            font-family: <!--Escolha um nome para a fonte-->
+            src:url(<!--Nome do arquivo-->) format(<!--Formato do arquivo-->)
+            font-weight:
+            font-style:
+        }
+
+        Tipos de Formatos: opentype (otf), truetype (ttf), embedded (opentype), truetype-aat (Apple Advanced Typography), svg.
+
+        Alinhamento de texto: text-align: "center, left, rigt, justify <!--Usados para parágrafos-->"
+                            text-indent: Espaçamento de inicio de parágrafos
+
+
+                            Efeito degrade:
+                                            background-image: linear-gradient(cor1 cor2);
+
+        <!--Links Úteis: Whatsfontis.com( Pegar fontes de imagem)
+                        Dafont.com-->
+
+Seletores
+
+        Em HTML "id" em CSS é "#" <!--Só pode ser usado em 1 elemento-->
+        Em HTML "class" em CSS é "." <!--Pode ser usado em vários elementos-->
+
+        Pseudo-classes: ":"
+                        Ex:hover <!--Muda quando passa o mouse-->
+
+        Pseudo-elementos: "::"
+
+
+Caixas
+
+
+target="_blank"  - Abre uma nova aba no navegador
+
+abbr= - Abreviação, mostra o significado de uma abreviação.
+
+height: - Altura
+width: - Largura
+border: Borda
+padding = Espaço entre a borda e o conteúdo
+margin = Espaço de fora
+Outline = Contorno 'fora do elemento'
+
+text-indent: -Espaçamento de inicio de paragráfo.
+
+#   = id
+.   = class
+:   = pseudo-class
+::  = pseudo-element
+>   = children
+
+
+
+
+
+border-collapse: collapse; <!--Colar bordas-->
+
+
+TABELAS
+
+    Hierarquia de Tabelas Simples
+            Table = tabela
+            <tr> table row = linha de tabela
+                <th> table header = cabeçalho de tabela
+                    <td> table data = dado de tabela
+
+
+    ANATOMIA PARA TABELAS GRANDES
+
+            TABLE
+                CAPTION = LEGENDA
+                THEAD
+                    TR,TD,TH
+                TDODY
+                    TR,TD,TH
+                TFOOT
+                    TR,TD,TH
+ 
+
+        Importância do (scope="")
+        Define se o informação está em uma coluna ou uma linha.
+
+        tbody tr:nth-child(odd ou even "impar ou par") = Efeito zebrado
+
+
+
+        thead tr th
+            position: sticky;
+            top: 0px;
+            background-color:
+
+            Usado pra fixar o cabeçalho da planilha quando haver rolagem...
+
+
+
+        Mesclagem
+
+        Usar colspan= Para espandir as células em colunas.
+        Usar rowspan= Para espandir as células em linhas.
+
+         <colgroup>
+            <col class="">
+            <col class=""> Usar esssa tag para destacar
+            <col class=""> uma coluna usando as classes
+            <col class="">
+        
+        </colgroup>
+
+        Dá pra usar span"" para cofigurar mais de uma colina de uma vez só.
+
+
+
+
+        div#container{
+            overflow-x: auto;
+        }
+        Usado para fazer uma barra de rolagem lateral somente para o conteudo da tabela.
