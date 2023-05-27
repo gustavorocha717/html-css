@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+</head>
+<body>
+    <h1>Teste de formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <div>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" autocomplete="name">
+        </div>
+        <div>
+            <label for="iidade">Idade</label>
+            <input type="number" name="idade" id="iidade" step="1"  min="10" max="100" >
+
+        </div>
+        <div>
+            <label for="itelefone">Telefone</label>
+            <input type="tel" name="telefone" id="itelefone" placeholder="(00) 0 0000-0000">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
