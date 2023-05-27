@@ -1,4 +1,4 @@
-<h1>Configurações Globais das CSS</h1>
+Configurações Globais das CSS>
 
         * = Todos
 
@@ -274,6 +274,38 @@ Capítulo 23
     
     Aula 2 – Vamos começar o projeto
 
+        box-sizing: border-box; 
+                           Faz com que a borda fique para dentro do objeto e não afete o outros.
+
+        ::-webkit-scrollbar{
+                            width: 0px;
+                            height: 0px;
+                        }   <!--Tira a barra de rolagem da viewport-->
 
 
+Capítulo 24 
 
+    Aula 1 – Como criar formulários com HTML5
+
+    Usar a tag form
+    
+        input:text <!-- Para entradas de textos-->
+    
+        input:submit <!--Para enviar-->
+
+        <Label>Nome:</Label> <!--Usar sempre para relacionar ao elemento usando o id:-->
+
+        Existem dois métodos simples pra envios de formulários, usando o parametro (method=) com um dos seguinte complementos:
+             GET: que é o metodo padrão onde aparece a informação na url. Suporta até 3000bytes e apenas envios de dados.
+
+             POST: Que não aparece a informação na url. suporta mais de 3mil bytes e tbm envios de arquivos
+
+    Usar o atributo "required" para tornar  o campo a preencher obrigatório.
+
+    minlength/maxlength= para controlar a quantidade de caracteres será permitido.
+
+    Placeholder= para colocar uma dica dentro da Caixa
+
+    Size= para determinar o tamanho da caixa
+
+    autocomplete= para sugerir o preenchimento automático do usuário com os dados do navegador.
