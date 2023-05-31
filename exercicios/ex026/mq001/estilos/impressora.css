@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* Estilos para impressoras*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+menu{
+    display: none;
+}
+
+h1{
+    text-align: center;
+}
+article{
+    margin: 5px;
+    text-align: justify;
+
+
+}
+
+article::after{
+    content: "Esse conteúdo foi impresso pelo jornal do dia"
+    
+
+};
