@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu portifólio</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sites</a></li>
+                <li><a href="#">Landing Pages</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Extras</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Destaques importantes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi itaque, ex quia ad voluptas maiores. Minima, veritatis maiores veniam sit eum non debitis voluptatum corrupti quos. Nulla, sapiente a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, cupiditate accusantium minima nesciunt quidem asperiores. Ex amet vitae numquam ipsum mollitia magnam debitis praesentium esse culpa tenetur inventore, modi impedit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt necessitatibus ipsam illo dignissimos quasi. Eligendi, itaque omnis pariatur, repellat reiciendis mollitia quas vel sed asperiores accusantium accusamus natus, debitis placeat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore numquam adipisci, debitis vitae consectetur sapiente beatae molestias repellendus natus eius deserunt voluptates asperiores pariatur est mollitia temporibus nam officia dolorem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ex doloribus est sequi iusto delectus et excepturi, soluta libero ipsum. Molestias assumenda magni, maxime voluptate laudantium temporibus alias aliquid sequi.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
