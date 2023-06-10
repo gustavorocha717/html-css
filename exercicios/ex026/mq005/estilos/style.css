@@ -12,8 +12,11 @@ html, body{
 
 header{
     background-color: gray;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.771);
 }
 header h1{
+    color: white;
     padding: 10px;
     text-align: center;
 }
@@ -24,7 +27,6 @@ header h1{
     padding: 10px;
     border-radius: 50%;
     margin: 10px;
-    align-items: end
 }
 
 #burguer:hover{
